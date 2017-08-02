@@ -1,6 +1,6 @@
 
 setInterval(function() {
-  $("td").not(".empty").css("background-color","#262626");
+  $("*").css("background-color","white");
   var today = new Date();
   var h = today.getHours();
   var m = today.getMinutes();
@@ -67,22 +67,22 @@ function light(x, kind) {
   var  k = x.toString();
   switch (kind) {
     case "seconds1":
-        $("#s1" + x).css("background-color","#00bfff");
+        $("#s1" + x).css("background-color","red");
       break;
     case "seconds2":
-      $("#s2" + x).css("background-color","#00bfff");
+      $("#s2" + x).css("background-color","red");
       break;
     case "minutes1":
-      $("#m1" +x+"").css("background-color","#00bfff");
+      $("#m1" +x+"").css("background-color","red");
       break;
     case "minutes2":
-      $("#m2"+x+"").css("background-color","#00bfff");
+      $("#m2"+x+"").css("background-color","red");
       break;
     case "hours1":
-      $("#h1" + x+"").css("background-color","#00bfff");
+      $("#h1" + x+"").css("background-color","red");
       break;
     case "hours2":
-      $("#h2" + x+"").css("background-color","#00bfff");
+      $("#h2" + x+"").css("background-color","red");
       break;
     default:
 
